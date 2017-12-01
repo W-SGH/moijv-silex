@@ -1,4 +1,5 @@
 -- phpMyAdmin SQL Dump
+<<<<<<< HEAD
 -- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
@@ -10,6 +11,17 @@
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
+=======
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Client :  127.0.0.1
+-- Généré le :  Jeu 30 Novembre 2017 à 14:21
+-- Version du serveur :  10.1.13-MariaDB
+-- Version de PHP :  5.6.23
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+>>>>>>> add-template
 SET time_zone = "+00:00";
 
 
@@ -77,7 +89,11 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+<<<<<<< HEAD
 -- Index pour les tables déchargées
+=======
+-- Index pour les tables exportées
+>>>>>>> add-template
 --
 
 --
@@ -109,7 +125,11 @@ ALTER TABLE `user`
   ADD PRIMARY KEY (`id`);
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT pour les tables déchargées
+=======
+-- AUTO_INCREMENT pour les tables exportées
+>>>>>>> add-template
 --
 
 --
@@ -117,27 +137,41 @@ ALTER TABLE `user`
 --
 ALTER TABLE `category`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+<<<<<<< HEAD
 
+=======
+>>>>>>> add-template
 --
 -- AUTO_INCREMENT pour la table `game`
 --
 ALTER TABLE `game`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+<<<<<<< HEAD
 
+=======
+>>>>>>> add-template
 --
 -- AUTO_INCREMENT pour la table `loaning`
 --
 ALTER TABLE `loaning`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+<<<<<<< HEAD
 
+=======
+>>>>>>> add-template
 --
 -- AUTO_INCREMENT pour la table `user`
 --
 ALTER TABLE `user`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+<<<<<<< HEAD
 
 --
 -- Contraintes pour les tables déchargées
+=======
+--
+-- Contraintes pour les tables exportées
+>>>>>>> add-template
 --
 
 --
@@ -153,7 +187,10 @@ ALTER TABLE `game`
 ALTER TABLE `loaning`
   ADD CONSTRAINT `loaning_ibfk_1` FOREIGN KEY (`game_id`) REFERENCES `game` (`id`),
   ADD CONSTRAINT `loaning_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`);
+<<<<<<< HEAD
 COMMIT;
+=======
+>>>>>>> add-template
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
