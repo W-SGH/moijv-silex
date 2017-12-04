@@ -1,0 +1,3 @@
+form[name="user"] { /*formulaire dont l'attribut name est egale a user'*/
+    padding : 0 20%;
+}

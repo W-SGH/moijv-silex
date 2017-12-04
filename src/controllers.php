@@ -9,11 +9,11 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 //Request::setTrustedProxies(array('127.0.0.1'));
 
 $app->get('/', function () use ($app) {
-    return $app['twig']->render('index.html.twig', array());
-})
-->bind('homepage')
+            return $app['twig']->render('index.html.twig', array());
+        })
+        ->bind('homepage')
 ;
-
+        
 $app->get('/login', function(Request $request) use ($app) {
     return $app['twig']->render('login.html.twig', array(
         'error'         => $app['security.last_error']($request),
@@ -21,10 +21,31 @@ $app->get('/login', function(Request $request) use ($app) {
     ));
 });
 
-$app->match('/register', function() use ($app) {
-    $form = $app['form.factory']->createBuilder(\FormType\UserType::class)
+$app->match('/register', function (Request $request) use ($app) {
+    
+    $user = new \Entity\User();
+    
+     var_dump($user);
+    
+    $form = $app['form.factory']->createBuilder(\FormType\UserType::class, $user)
             ->getForm();
-
+    
+    $form->handleRequest($request);
+    
+    if($form->isValid()) {
+        $user->setRoles('ROLE_USER');
+        
+        $salt = md5(time());
+        
+        $user->setSalt($salt);
+        
+        $encodePassword = $app['security.encoder_factory']
+                ->getEncoder($user)
+                ->encodePassword($password, $user->getSalt());
+        $user->setPassword($encodePassword);
+        $app['user.dao']->save($user);
+    }
+    
     $formView = $form->createView();
     
     return $app['twig']->render('register.html.twig', ['form' => $formView]);
@@ -39,9 +60,9 @@ $app->error(function (\Exception $e, Request $request, $code) use ($app) {
 
     // 404.html, or 40x.html, or 4xx.html, or error.html
     $templates = array(
-        'errors/'.$code.'.html.twig',
-        'errors/'.substr($code, 0, 2).'x.html.twig',
-        'errors/'.substr($code, 0, 1).'xx.html.twig',
+        'errors/' . $code . '.html.twig',
+        'errors/' . substr($code, 0, 2) . 'x.html.twig',
+        'errors/' . substr($code, 0, 1) . 'xx.html.twig',
         'errors/default.html.twig',
     );
 

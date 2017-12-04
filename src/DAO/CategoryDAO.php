@@ -1,12 +1,19 @@
 <?php
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 namespace DAO;
 
 /**
- * Description of CategoryDao
+ * Description of CategoryDAO
  *
- * @author Etudiant
+ * @author eric
  */
-class CategoryDao extends \SimpleDAO\DAO {
+class CategoryDAO extends \SimpleDAO\DAO
+{
     //put your code here
 }

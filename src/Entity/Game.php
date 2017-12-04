@@ -1,84 +1,93 @@
 <?php
 
-
 namespace Entity;
 
 /**
- * Description of Game
+ * Description of Category
  *
  * @author Etudiant
  */
-class Game {
-    
+class Game
+{
+
     /**
      * id of the game
-     * @var integer 
+     * @var Int
      */
     private $id;
-    
+
     /**
      * title of the game
      * @var string
      */
     private $title;
-    
+
     /**
      * image of the game
      * @var string
      */
     private $image;
-    
+
     /**
      * id of the owner
      * @var \Entity\User
      */
     private $user;
-    
+
     /**
-     * id of the category
+     * id of  the category
      * @var \Entity\Category
      */
     private $category;
-    
-    public function getId() {
+
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function getTitle() {
+    public function getTitle()
+    {
         return $this->title;
     }
 
-    public function getImage() {
+    public function getImage()
+    {
         return $this->image;
     }
 
-    public function getUser() {
+    public function getUser()
+    {
         return $this->user;
     }
 
-    public function getCategory() {
+    public function getCategory()
+    {
         return $this->category;
     }
 
-    public function setId($id) {
+    public function setId(Int $id)
+    {
         $this->id = $id;
     }
 
-    public function setTitle($title) {
+    public function setTitle($title)
+    {
         $this->title = $title;
     }
 
-    public function setImage($image) {
+    public function setImage($image)
+    {
         $this->image = $image;
     }
 
-    public function setUser(\Entity\User $user) {
+    public function setUser(\Entity\User $user)
+    {
         $this->user = $user;
     }
 
-    public function setCategory(\Entity\Category $category) {
+    public function setCategory(\Entity\Category $category)
+    {
         $this->category = $category;
     }
-
 
 }

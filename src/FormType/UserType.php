@@ -3,74 +3,87 @@
 namespace FormType;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
-use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\Form\Extension\Core\Type\RepeatedType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 /**
  * Description of UserType
  *
- * @author Etudiant
+ * @author eric
  */
+
 class UserType extends AbstractType
 {
-    public function buildForm(FormBuilderInterface $builder, array $options     )
+    public function buildForm(FormBuilderInterface $builder, array $options)
     {
         global $app;
-        $builder->add('username', TextType::class,[
+        $builder->add('username', TextType::class, [
             'constraints' => [
                 new Assert\NotBlank(),
                 new Assert\Length(['min' => 2, 'max' => 50]),
-                new \Constraints\UniqueEnity([
+                new \Constraints\UniqueEntity([
                     'field' => 'username',
                     'dao' => $app['users.dao']
                 ])
-            ]
+            ],
+            'label' => 'Nom d\'utilisateur' 
         ])
         ->add('email', EmailType::class, [
             'constraints' => [
                 new Assert\NotBlank(),
-                new Assert\Email(),
-                new \Constraints\UniqueEnity([
-                    'field' => 'email',
+                new Assert\Length(['min' => 2, 'max' => 50]),
+                new \Constraints\UniqueEntity([
+                    'field' => 'username',
                     'dao' => $app['users.dao']
                 ])
-            ]
+            ],
+            'label' => 'Adresse email'
         ])
-        ->add('lastname', TextType::class,[
-            'constraints' =>[
-                new Assert\NotBlank(),
-                new Assert\Length(['max' => 100]),
-            ]
-        ])
-        ->add('firstname', TextType::class,[
-            'constraints' =>[
-                new Assert\NotBlank(),
-                new Assert\Length(['max' => 100]),
-            ]
-        ])
-        ->add('password', PasswordType::class, [
+         ->add('lastname', TextType::class, [
             'constraints' => [
                 new Assert\NotBlank(),
-                new Assert\Length(['min' => 5, 'max' => 30]),
-            ]
+                new Assert\Length(['max' => 100]),
+            ],
+            'label' => 'Nom de famille' 
         ])
-        ->add('passwordconfirm', PasswordType::class, [
+        ->add('firstname', TextType::class, [
             'constraints' => [
-                new Assert\IdenticalTo(['value' => 'password'])
+                new Assert\NotBlank(),
+                new Assert\Length(['max' => 100]),
+            ],
+            'label' => 'Prénom' 
+        ])
+        ->add('password', RepeatedType::class, [
+            'type' => PasswordType::class,
+            'invalid_message' => 'The password field must match',
+            'options' => ['attr' =>['class' => 'password-field']],
+            'first_options' => [
+                 'constraints' => [
+                    new Assert\NotBlank(),
+                    new Assert\Length(['min' => 5, 'max' => 30]),
+                 ],
+                 'label' => 'Mot de passe' 
+            ],
+            'second_options' => [
+                'label' => 'Mot de passe de confirmation'
             ]
         ])
-        ->add('submit', SubmitType::class)
+         ->add('submit', SubmitType::class, [
+                    'label' => 'Envoyer'
+        ])
         ;
     }
-    public function configureOptions(OptionsResolver $resolver)
+    
+    public function configureOptions (OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-           'data_class' => \Entity\User::class 
+            'data_class' => \Entity\User::class
         ]);
     }
 }

@@ -9,11 +9,11 @@
 namespace DAO;
 
 /**
- * Description of GameDAO
+ * Description of LoaningDAO
  *
  * @author eric
  */
-class GameDAO extends \SimpleDAO\DAO
+class LoaningDAO extends \SimpleDAO\DAO
 {
     //put your code here
 }

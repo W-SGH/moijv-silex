@@ -7,34 +7,39 @@ namespace Entity;
  *
  * @author Etudiant
  */
-class Category {
+class Category
+{
+
     /**
      * id of the category
-     * @var integer 
+     * @var type 
      */
     private $id;
-    
+
     /**
-     * name og the user
-     * @var string
+     * name of the category
+     * @var type 
      */
     private $name;
-    
-    public function getId() {
+
+    public function getId()
+    {
         return $this->id;
     }
 
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 
-    public function setId($id) {
+    public function setId(type $id)
+    {
         $this->id = $id;
     }
 
-    public function setName($name) {
+    public function setName(type $name)
+    {
         $this->name = $name;
     }
-
 
 }

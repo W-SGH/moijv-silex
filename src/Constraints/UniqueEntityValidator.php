@@ -3,23 +3,29 @@
 namespace Constraints;
 
 use Symfony\Component\Validator\ConstraintValidator;
-use Constraints\UniqueEnity;
+
+use Constraints\UniqueEntity;
+
+use Symfony\Component\Validator\Constraint;
+
 /**
  * Description of UniqueEntityValidator
  *
- * @author Etudiant
+ * @author eric
  */
+
 class UniqueEntityValidator extends ConstraintValidator
 {
-    public function validate($value, UniqueEntity $constraint)
+    public function validate($value, Constraint $constraint)
     {
         $field = $constraint->getField();
         $dao = $constraint->getDao();
         
         $entity = $dao->findOne(["$field = ?" => $value]);
-    
-        if($entity){
+        
+        if($entity) {
             $this->context->buildViolation($constraint->message)->addViolation();
+            
         }
     }
 }

@@ -25,14 +25,14 @@ class User implements UserInterface
     private $username;
 
     /**
-     * Email of the user
+     * Password of the user
      * @var string 
      */
     private $password;
 
     /**
-     * password of the user
-     * @var string
+     * Email of the user
+     * @var string 
      */
     private $email;
 
@@ -49,14 +49,14 @@ class User implements UserInterface
     private $lastname;
 
     /**
-     * List of the user's roles
-     * @var array 
+     * list of the user's roles
+     * @var array
      */
     private $roles;
 
     /**
-     * The salt used to encode the user's password
-     * @var string
+     * the salt used to encode the user's password
+     * @var type 
      */
     private $salt;
 
@@ -122,12 +122,12 @@ class User implements UserInterface
 
     public function eraseCredentials()
     {
-        $this->setPassword(NULL);
+        $this->setPassword(NULL); // pour rendre invisible le password.)
     }
 
     public function getRoles()
-    {
-        $this->roles;
+    {//pour renvoyer un tableau de roles par utilisateur
+        return $this->roles;
     }
 
     public function setRoles($roles)
@@ -140,12 +140,22 @@ class User implements UserInterface
 
     public function getSalt()
     {
-        return $this->salt;
+        
     }
 
-    public function setSalt($salt)
+    public function setSalt(type $salt)
     {
         $this->salt = $salt;
     }
-
+    
+    public function getPasswordConfirm()
+    {
+        return '';
+    }
+    
+    public function setPasswordConfirm()
+    {
+        return '';
+    }
+    
 }
