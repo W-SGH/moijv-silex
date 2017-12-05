@@ -4,6 +4,10 @@
     </head>
     <body>
         <h1>{{ block('title') }}</h1>
+        <div>
+            <a href="{{ path ('admin_logoutadmin') }}">Déconnexion</a>
+            <a href="{{ path ('admin_userlist') }}">Liste d'utilisateur</a>
+        </div>
         <div class="content">
             {% block content %} {% endblock%}
     </body>
