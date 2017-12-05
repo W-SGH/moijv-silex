@@ -15,17 +15,18 @@ class __TwigTemplate_d9a78a52804b20d567bea3a05d93cea6c49a4fcad72729778e7d2bd9e7b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9d56975d1b6df084c34f297ffae3b4090ba488969f8b81277088d977c89f98a0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9d56975d1b6df084c34f297ffae3b4090ba488969f8b81277088d977c89f98a0->enter($__internal_9d56975d1b6df084c34f297ffae3b4090ba488969f8b81277088d977c89f98a0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
+        $__internal_f03de994d278922ba853e87b032d8d8580f7ef08f367cc0126fecbab4d28f44e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_f03de994d278922ba853e87b032d8d8580f7ef08f367cc0126fecbab4d28f44e->enter($__internal_f03de994d278922ba853e87b032d8d8580f7ef08f367cc0126fecbab4d28f44e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
 
-        $__internal_ccb9fb9f1b20777dd5f343e820c4165ea27a0c78bfc26e73f0669e898df35bb5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_ccb9fb9f1b20777dd5f343e820c4165ea27a0c78bfc26e73f0669e898df35bb5->enter($__internal_ccb9fb9f1b20777dd5f343e820c4165ea27a0c78bfc26e73f0669e898df35bb5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
+        $__internal_cf8d0eda15a6404ebc19f2ce0029be0f034e6364ac519910ed257213d1cfee20 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_cf8d0eda15a6404ebc19f2ce0029be0f034e6364ac519910ed257213d1cfee20->enter($__internal_cf8d0eda15a6404ebc19f2ce0029be0f034e6364ac519910ed257213d1cfee20_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/base_js.html.twig"));
 
         // line 3
         echo "<script";
         if ((array_key_exists("csp_script_nonce", $context) && (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new Twig_Error_Runtime('Variable "csp_script_nonce" does not exist.', 3, $this->getSourceContext()); })()))) {
-            echo " nonce=";
+            echo " nonce=\"";
             echo twig_escape_filter($this->env, (isset($context["csp_script_nonce"]) || array_key_exists("csp_script_nonce", $context) ? $context["csp_script_nonce"] : (function () { throw new Twig_Error_Runtime('Variable "csp_script_nonce" does not exist.', 3, $this->getSourceContext()); })()), "html", null, true);
+            echo "\"";
         }
         echo ">/*<![CDATA[*/
     ";
@@ -48,7 +49,7 @@ class __TwigTemplate_d9a78a52804b20d567bea3a05d93cea6c49a4fcad72729778e7d2bd9e7b
 
         var noop = function() {};
 
-        var profilerStorageKey = 'sf2/profiler/';
+        var profilerStorageKey = 'symfony/profiler/';
 
         var request = function(url, onSuccess, onError, payload, options) {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
@@ -580,10 +581,10 @@ class __TwigTemplate_d9a78a52804b20d567bea3a05d93cea6c49a4fcad72729778e7d2bd9e7b
 /*]]>*/</script>
 ";
         
-        $__internal_9d56975d1b6df084c34f297ffae3b4090ba488969f8b81277088d977c89f98a0->leave($__internal_9d56975d1b6df084c34f297ffae3b4090ba488969f8b81277088d977c89f98a0_prof);
+        $__internal_f03de994d278922ba853e87b032d8d8580f7ef08f367cc0126fecbab4d28f44e->leave($__internal_f03de994d278922ba853e87b032d8d8580f7ef08f367cc0126fecbab4d28f44e_prof);
 
         
-        $__internal_ccb9fb9f1b20777dd5f343e820c4165ea27a0c78bfc26e73f0669e898df35bb5->leave($__internal_ccb9fb9f1b20777dd5f343e820c4165ea27a0c78bfc26e73f0669e898df35bb5_prof);
+        $__internal_cf8d0eda15a6404ebc19f2ce0029be0f034e6364ac519910ed257213d1cfee20->leave($__internal_cf8d0eda15a6404ebc19f2ce0029be0f034e6364ac519910ed257213d1cfee20_prof);
 
     }
 
@@ -599,14 +600,14 @@ class __TwigTemplate_d9a78a52804b20d567bea3a05d93cea6c49a4fcad72729778e7d2bd9e7b
 
     public function getDebugInfo()
     {
-        return array (  381 => 332,  349 => 303,  343 => 300,  339 => 299,  333 => 296,  329 => 295,  285 => 254,  266 => 237,  264 => 236,  33 => 7,  25 => 3,);
+        return array (  382 => 332,  350 => 303,  344 => 300,  340 => 299,  334 => 296,  330 => 295,  286 => 254,  267 => 237,  265 => 236,  34 => 7,  25 => 3,);
     }
 
     public function getSourceContext()
     {
         return new Twig_Source("{# This file is partially duplicated in TwigBundle/Resources/views/base_js.html.twig. If you
    make any change in this file, verify the same change is needed in the other file. #}
-<script{% if csp_script_nonce is defined and csp_script_nonce %} nonce={{ csp_script_nonce }}{% endif %}>/*<![CDATA[*/
+<script{% if csp_script_nonce is defined and csp_script_nonce %} nonce=\"{{ csp_script_nonce }}\"{% endif %}>/*<![CDATA[*/
     {# Caution: the contents of this file are processed by Twig before loading
                 them as JavaScript source code. Always use '/*' comments instead
                 of '//' comments to avoid impossible-to-debug side-effects #}
@@ -628,7 +629,7 @@ class __TwigTemplate_d9a78a52804b20d567bea3a05d93cea6c49a4fcad72729778e7d2bd9e7b
 
         var noop = function() {};
 
-        var profilerStorageKey = 'sf2/profiler/';
+        var profilerStorageKey = 'symfony/profiler/';
 
         var request = function(url, onSuccess, onError, payload, options) {
             var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');

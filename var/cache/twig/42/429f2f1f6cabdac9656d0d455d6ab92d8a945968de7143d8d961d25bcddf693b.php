@@ -14,6 +14,10 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
             'menu' => array($this, 'block_menu'),
             'panel' => array($this, 'block_panel'),
             'panelContent' => array($this, 'block_panelContent'),
+            'messages' => array($this, 'block_messages'),
+            'defined_messages' => array($this, 'block_defined_messages'),
+            'fallback_messages' => array($this, 'block_fallback_messages'),
+            'missing_messages' => array($this, 'block_missing_messages'),
         );
     }
 
@@ -24,32 +28,32 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_086aff52672e23b26bbbafd7f747096dbf2fada932d7a78f83953f0048c7b245 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_086aff52672e23b26bbbafd7f747096dbf2fada932d7a78f83953f0048c7b245->enter($__internal_086aff52672e23b26bbbafd7f747096dbf2fada932d7a78f83953f0048c7b245_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/translation.html.twig"));
+        $__internal_98a10e34889e51f25864025788d4883830211125cea2fa48b8bab61746827324 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_98a10e34889e51f25864025788d4883830211125cea2fa48b8bab61746827324->enter($__internal_98a10e34889e51f25864025788d4883830211125cea2fa48b8bab61746827324_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/translation.html.twig"));
 
-        $__internal_842a531c3e266edbf11c429cabe21d7e6395c1d39733ffd633b79d7802f5262c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_842a531c3e266edbf11c429cabe21d7e6395c1d39733ffd633b79d7802f5262c->enter($__internal_842a531c3e266edbf11c429cabe21d7e6395c1d39733ffd633b79d7802f5262c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/translation.html.twig"));
+        $__internal_8bcc067abfc02cac8c7d8e9ec4f7680925c350b95078419640b262e2c763662a = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_8bcc067abfc02cac8c7d8e9ec4f7680925c350b95078419640b262e2c763662a->enter($__internal_8bcc067abfc02cac8c7d8e9ec4f7680925c350b95078419640b262e2c763662a_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Collector/translation.html.twig"));
 
         // line 3
         $context["helper"] = $this;
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_086aff52672e23b26bbbafd7f747096dbf2fada932d7a78f83953f0048c7b245->leave($__internal_086aff52672e23b26bbbafd7f747096dbf2fada932d7a78f83953f0048c7b245_prof);
+        $__internal_98a10e34889e51f25864025788d4883830211125cea2fa48b8bab61746827324->leave($__internal_98a10e34889e51f25864025788d4883830211125cea2fa48b8bab61746827324_prof);
 
         
-        $__internal_842a531c3e266edbf11c429cabe21d7e6395c1d39733ffd633b79d7802f5262c->leave($__internal_842a531c3e266edbf11c429cabe21d7e6395c1d39733ffd633b79d7802f5262c_prof);
+        $__internal_8bcc067abfc02cac8c7d8e9ec4f7680925c350b95078419640b262e2c763662a->leave($__internal_8bcc067abfc02cac8c7d8e9ec4f7680925c350b95078419640b262e2c763662a_prof);
 
     }
 
     // line 5
     public function block_toolbar($context, array $blocks = array())
     {
-        $__internal_b5d5c55fe9043fa9d22526d427f1f6258fbf63c45468770762cc50fe32995cbc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b5d5c55fe9043fa9d22526d427f1f6258fbf63c45468770762cc50fe32995cbc->enter($__internal_b5d5c55fe9043fa9d22526d427f1f6258fbf63c45468770762cc50fe32995cbc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
+        $__internal_dc9b4e3345cfdaf84e45c7eab737440d2027108796572835d5355bcefa65782e = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_dc9b4e3345cfdaf84e45c7eab737440d2027108796572835d5355bcefa65782e->enter($__internal_dc9b4e3345cfdaf84e45c7eab737440d2027108796572835d5355bcefa65782e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
 
-        $__internal_f9b61fd611e152bec2af525db24ec22be1f49c030ffef618ab44323ec70d78c5 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_f9b61fd611e152bec2af525db24ec22be1f49c030ffef618ab44323ec70d78c5->enter($__internal_f9b61fd611e152bec2af525db24ec22be1f49c030ffef618ab44323ec70d78c5_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
+        $__internal_ee068a0a8c86abfe0b71e36e0157304de33e0f0950acb7fa95ae574e8de2167f = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_ee068a0a8c86abfe0b71e36e0157304de33e0f0950acb7fa95ae574e8de2167f->enter($__internal_ee068a0a8c86abfe0b71e36e0157304de33e0f0950acb7fa95ae574e8de2167f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "toolbar"));
 
         // line 6
         echo "    ";
@@ -80,14 +84,23 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
             ob_start();
             // line 15
             echo "            <div class=\"sf-toolbar-info-piece\">
-                <b>Missing messages</b>
-                <span class=\"sf-toolbar-status sf-toolbar-status-";
-            // line 17
-            echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 17, $this->getSourceContext()); })()), "countMissings", array())) ? ("red") : (""));
-            echo "\">
+                <b>Locale</b>
+                <span class=\"sf-toolbar-status\">
                     ";
             // line 18
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 18, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
+            echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->getSourceContext(), ($context["collector"] ?? null), "locale", array(), "any", true, true)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->getSourceContext(), ($context["collector"] ?? null), "locale", array()), "-")) : ("-")), "html", null, true);
+            echo "
+                </span>
+            </div>
+            <div class=\"sf-toolbar-info-piece\">
+                <b>Missing messages</b>
+                <span class=\"sf-toolbar-status sf-toolbar-status-";
+            // line 23
+            echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 23, $this->getSourceContext()); })()), "countMissings", array())) ? ("red") : (""));
+            echo "\">
+                    ";
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 24, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
             echo "
                 </span>
             </div>
@@ -95,12 +108,12 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
             <div class=\"sf-toolbar-info-piece\">
                 <b>Fallback messages</b>
                 <span class=\"sf-toolbar-status sf-toolbar-status-";
-            // line 24
-            echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 24, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("yellow") : (""));
+            // line 30
+            echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 30, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("yellow") : (""));
             echo "\">
                     ";
-            // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 25, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
+            // line 31
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 31, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
             echo "
                 </span>
             </div>
@@ -108,140 +121,160 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
             <div class=\"sf-toolbar-info-piece\">
                 <b>Defined messages</b>
                 <span class=\"sf-toolbar-status\">";
-            // line 31
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 31, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
+            // line 37
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 37, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
             echo "</span>
             </div>
         ";
             $context["text"] = ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
-            // line 34
+            // line 40
             echo "
         ";
-            // line 35
-            echo twig_include($this->env, $context, "@WebProfiler/Profiler/toolbar_item.html.twig", array("link" => (isset($context["profiler_url"]) || array_key_exists("profiler_url", $context) ? $context["profiler_url"] : (function () { throw new Twig_Error_Runtime('Variable "profiler_url" does not exist.', 35, $this->getSourceContext()); })()), "status" => (isset($context["status_color"]) || array_key_exists("status_color", $context) ? $context["status_color"] : (function () { throw new Twig_Error_Runtime('Variable "status_color" does not exist.', 35, $this->getSourceContext()); })())));
+            // line 41
+            echo twig_include($this->env, $context, "@WebProfiler/Profiler/toolbar_item.html.twig", array("link" => (isset($context["profiler_url"]) || array_key_exists("profiler_url", $context) ? $context["profiler_url"] : (function () { throw new Twig_Error_Runtime('Variable "profiler_url" does not exist.', 41, $this->getSourceContext()); })()), "status" => (isset($context["status_color"]) || array_key_exists("status_color", $context) ? $context["status_color"] : (function () { throw new Twig_Error_Runtime('Variable "status_color" does not exist.', 41, $this->getSourceContext()); })())));
             echo "
     ";
         }
         
-        $__internal_f9b61fd611e152bec2af525db24ec22be1f49c030ffef618ab44323ec70d78c5->leave($__internal_f9b61fd611e152bec2af525db24ec22be1f49c030ffef618ab44323ec70d78c5_prof);
+        $__internal_ee068a0a8c86abfe0b71e36e0157304de33e0f0950acb7fa95ae574e8de2167f->leave($__internal_ee068a0a8c86abfe0b71e36e0157304de33e0f0950acb7fa95ae574e8de2167f_prof);
 
         
-        $__internal_b5d5c55fe9043fa9d22526d427f1f6258fbf63c45468770762cc50fe32995cbc->leave($__internal_b5d5c55fe9043fa9d22526d427f1f6258fbf63c45468770762cc50fe32995cbc_prof);
+        $__internal_dc9b4e3345cfdaf84e45c7eab737440d2027108796572835d5355bcefa65782e->leave($__internal_dc9b4e3345cfdaf84e45c7eab737440d2027108796572835d5355bcefa65782e_prof);
 
     }
 
-    // line 39
+    // line 45
     public function block_menu($context, array $blocks = array())
     {
-        $__internal_294c6e14a970c24993087d775ed0db85b5733c1110b7873f44359d27405ba381 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_294c6e14a970c24993087d775ed0db85b5733c1110b7873f44359d27405ba381->enter($__internal_294c6e14a970c24993087d775ed0db85b5733c1110b7873f44359d27405ba381_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_346d58dcfb40a605aa760a02cabb893e292da71bd81f927d49c573262e23ef37 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_346d58dcfb40a605aa760a02cabb893e292da71bd81f927d49c573262e23ef37->enter($__internal_346d58dcfb40a605aa760a02cabb893e292da71bd81f927d49c573262e23ef37_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
-        $__internal_d90d29dcc888cad7d92c1c110d93f0c541044debd7540a40c0433def1573d4db = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_d90d29dcc888cad7d92c1c110d93f0c541044debd7540a40c0433def1573d4db->enter($__internal_d90d29dcc888cad7d92c1c110d93f0c541044debd7540a40c0433def1573d4db_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
+        $__internal_4d283010d63ed2ef782a531b7391560affc36c31de9b6b6b3a73d311fbb1baed = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4d283010d63ed2ef782a531b7391560affc36c31de9b6b6b3a73d311fbb1baed->enter($__internal_4d283010d63ed2ef782a531b7391560affc36c31de9b6b6b3a73d311fbb1baed_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "menu"));
 
-        // line 40
+        // line 46
         echo "    <span class=\"label label-status-";
-        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 40, $this->getSourceContext()); })()), "countMissings", array())) ? ("error") : (((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 40, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("warning") : (""))));
+        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 46, $this->getSourceContext()); })()), "countMissings", array())) ? ("error") : (((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 46, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("warning") : (""))));
         echo " ";
-        echo ((twig_test_empty(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 40, $this->getSourceContext()); })()), "messages", array()))) ? ("disabled") : (""));
+        echo ((twig_test_empty(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 46, $this->getSourceContext()); })()), "messages", array()))) ? ("disabled") : (""));
         echo "\">
         <span class=\"icon\">";
-        // line 41
+        // line 47
         echo twig_include($this->env, $context, "@WebProfiler/Icon/translation.svg");
         echo "</span>
         <strong>Translation</strong>
         ";
-        // line 43
-        if ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 43, $this->getSourceContext()); })()), "countMissings", array()) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 43, $this->getSourceContext()); })()), "countFallbacks", array()))) {
-            // line 44
+        // line 49
+        if ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 49, $this->getSourceContext()); })()), "countMissings", array()) || twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 49, $this->getSourceContext()); })()), "countFallbacks", array()))) {
+            // line 50
             echo "            ";
-            $context["error_count"] = (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 44, $this->getSourceContext()); })()), "countMissings", array()) + twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 44, $this->getSourceContext()); })()), "countFallbacks", array()));
-            // line 45
+            $context["error_count"] = (twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 50, $this->getSourceContext()); })()), "countMissings", array()) + twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 50, $this->getSourceContext()); })()), "countFallbacks", array()));
+            // line 51
             echo "            <span class=\"count\">
                 <span>";
-            // line 46
-            echo twig_escape_filter($this->env, (isset($context["error_count"]) || array_key_exists("error_count", $context) ? $context["error_count"] : (function () { throw new Twig_Error_Runtime('Variable "error_count" does not exist.', 46, $this->getSourceContext()); })()), "html", null, true);
+            // line 52
+            echo twig_escape_filter($this->env, (isset($context["error_count"]) || array_key_exists("error_count", $context) ? $context["error_count"] : (function () { throw new Twig_Error_Runtime('Variable "error_count" does not exist.', 52, $this->getSourceContext()); })()), "html", null, true);
             echo "</span>
             </span>
         ";
         }
-        // line 49
+        // line 55
         echo "    </span>
 ";
         
-        $__internal_d90d29dcc888cad7d92c1c110d93f0c541044debd7540a40c0433def1573d4db->leave($__internal_d90d29dcc888cad7d92c1c110d93f0c541044debd7540a40c0433def1573d4db_prof);
+        $__internal_4d283010d63ed2ef782a531b7391560affc36c31de9b6b6b3a73d311fbb1baed->leave($__internal_4d283010d63ed2ef782a531b7391560affc36c31de9b6b6b3a73d311fbb1baed_prof);
 
         
-        $__internal_294c6e14a970c24993087d775ed0db85b5733c1110b7873f44359d27405ba381->leave($__internal_294c6e14a970c24993087d775ed0db85b5733c1110b7873f44359d27405ba381_prof);
+        $__internal_346d58dcfb40a605aa760a02cabb893e292da71bd81f927d49c573262e23ef37->leave($__internal_346d58dcfb40a605aa760a02cabb893e292da71bd81f927d49c573262e23ef37_prof);
 
     }
 
-    // line 52
+    // line 58
     public function block_panel($context, array $blocks = array())
     {
-        $__internal_62f92489a4b586a3ffd33159891bbbb7428cb990fb8c9c99b8e179b3cf4c1ff8 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_62f92489a4b586a3ffd33159891bbbb7428cb990fb8c9c99b8e179b3cf4c1ff8->enter($__internal_62f92489a4b586a3ffd33159891bbbb7428cb990fb8c9c99b8e179b3cf4c1ff8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
+        $__internal_db4808ba00acf68b3d6f40b7fefa9cafdaaf0deda33ee47b01626997f8484841 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_db4808ba00acf68b3d6f40b7fefa9cafdaaf0deda33ee47b01626997f8484841->enter($__internal_db4808ba00acf68b3d6f40b7fefa9cafdaaf0deda33ee47b01626997f8484841_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
 
-        $__internal_a59e6a94bde2e1f5f6a2b0ccffc1c2371f8284ee03b5c49f389e7c0bb55fb327 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_a59e6a94bde2e1f5f6a2b0ccffc1c2371f8284ee03b5c49f389e7c0bb55fb327->enter($__internal_a59e6a94bde2e1f5f6a2b0ccffc1c2371f8284ee03b5c49f389e7c0bb55fb327_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
+        $__internal_4af62ef3aba1d2846d4d48e5a7de08f26b670f788b10fd15d4a8c04c745fa82d = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_4af62ef3aba1d2846d4d48e5a7de08f26b670f788b10fd15d4a8c04c745fa82d->enter($__internal_4af62ef3aba1d2846d4d48e5a7de08f26b670f788b10fd15d4a8c04c745fa82d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panel"));
 
-        // line 53
+        // line 59
         echo "    ";
-        if (twig_test_empty(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 53, $this->getSourceContext()); })()), "messages", array()))) {
-            // line 54
+        if (twig_test_empty(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 59, $this->getSourceContext()); })()), "messages", array()))) {
+            // line 60
             echo "        <h2>Translations</h2>
         <div class=\"empty\">
             <p>No translations have been called.</p>
         </div>
     ";
         } else {
-            // line 59
+            // line 65
             echo "        ";
             $this->displayBlock("panelContent", $context, $blocks);
             echo "
     ";
         }
         
-        $__internal_a59e6a94bde2e1f5f6a2b0ccffc1c2371f8284ee03b5c49f389e7c0bb55fb327->leave($__internal_a59e6a94bde2e1f5f6a2b0ccffc1c2371f8284ee03b5c49f389e7c0bb55fb327_prof);
+        $__internal_4af62ef3aba1d2846d4d48e5a7de08f26b670f788b10fd15d4a8c04c745fa82d->leave($__internal_4af62ef3aba1d2846d4d48e5a7de08f26b670f788b10fd15d4a8c04c745fa82d_prof);
 
         
-        $__internal_62f92489a4b586a3ffd33159891bbbb7428cb990fb8c9c99b8e179b3cf4c1ff8->leave($__internal_62f92489a4b586a3ffd33159891bbbb7428cb990fb8c9c99b8e179b3cf4c1ff8_prof);
+        $__internal_db4808ba00acf68b3d6f40b7fefa9cafdaaf0deda33ee47b01626997f8484841->leave($__internal_db4808ba00acf68b3d6f40b7fefa9cafdaaf0deda33ee47b01626997f8484841_prof);
 
     }
 
-    // line 63
+    // line 69
     public function block_panelContent($context, array $blocks = array())
     {
-        $__internal_b92b14554affabde059516b90f2028aae478cfdff799e30737bf2fc58f9579da = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_b92b14554affabde059516b90f2028aae478cfdff799e30737bf2fc58f9579da->enter($__internal_b92b14554affabde059516b90f2028aae478cfdff799e30737bf2fc58f9579da_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panelContent"));
+        $__internal_b281cee87f85045c0858497d4614f5469006e95ea055212c0eae12d2698cf70f = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_b281cee87f85045c0858497d4614f5469006e95ea055212c0eae12d2698cf70f->enter($__internal_b281cee87f85045c0858497d4614f5469006e95ea055212c0eae12d2698cf70f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panelContent"));
 
-        $__internal_220fb8eca82920472954c5800cf53b3bac0ad0994c107c30d3068e60601fa1c4 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_220fb8eca82920472954c5800cf53b3bac0ad0994c107c30d3068e60601fa1c4->enter($__internal_220fb8eca82920472954c5800cf53b3bac0ad0994c107c30d3068e60601fa1c4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panelContent"));
+        $__internal_47d73eb04d916acfd04c483e0d4cb9ed0d4212b2b62335140b3eb7b038d7e41b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_47d73eb04d916acfd04c483e0d4cb9ed0d4212b2b62335140b3eb7b038d7e41b->enter($__internal_47d73eb04d916acfd04c483e0d4cb9ed0d4212b2b62335140b3eb7b038d7e41b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "panelContent"));
 
-        // line 64
-        echo "    <h2>Translation Metrics</h2>
+        // line 70
+        echo "
+    <h2>Translation Locales</h2>
 
     <div class=\"metrics\">
         <div class=\"metric\">
             <span class=\"value\">";
-        // line 68
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 68, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
+        // line 75
+        echo twig_escape_filter($this->env, ((twig_get_attribute($this->env, $this->getSourceContext(), ($context["collector"] ?? null), "locale", array(), "any", true, true)) ? (_twig_default_filter(twig_get_attribute($this->env, $this->getSourceContext(), ($context["collector"] ?? null), "locale", array()), "-")) : ("-")), "html", null, true);
+        echo "</span>
+            <span class=\"label\">Locale</span>
+        </div>
+        <div class=\"metric\">
+            <span class=\"value\">";
+        // line 79
+        echo twig_escape_filter($this->env, _twig_default_filter(twig_join_filter(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 79, $this->getSourceContext()); })()), "fallbackLocales", array()), ", "), "-"), "html", null, true);
+        echo "</span>
+            <span class=\"label\">Fallback locales</span>
+        </div>
+    </div>
+
+    <h2>Translation Metrics</h2>
+
+    <div class=\"metrics\">
+        <div class=\"metric\">
+            <span class=\"value\">";
+        // line 88
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 88, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
         echo "</span>
             <span class=\"label\">Defined messages</span>
         </div>
 
         <div class=\"metric\">
             <span class=\"value\">";
-        // line 73
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 73, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
+        // line 93
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 93, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
         echo "</span>
             <span class=\"label\">Fallback messages</span>
         </div>
 
         <div class=\"metric\">
             <span class=\"value\">";
-        // line 78
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 78, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
+        // line 98
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 98, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
         echo "</span>
             <span class=\"label\">Missing messages</span>
         </div>
@@ -250,48 +283,73 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
     <h2>Translation Messages</h2>
 
     ";
-        // line 86
+        // line 105
+        $this->displayBlock('messages', $context, $blocks);
+        // line 185
+        echo "
+";
+        
+        $__internal_47d73eb04d916acfd04c483e0d4cb9ed0d4212b2b62335140b3eb7b038d7e41b->leave($__internal_47d73eb04d916acfd04c483e0d4cb9ed0d4212b2b62335140b3eb7b038d7e41b_prof);
+
+        
+        $__internal_b281cee87f85045c0858497d4614f5469006e95ea055212c0eae12d2698cf70f->leave($__internal_b281cee87f85045c0858497d4614f5469006e95ea055212c0eae12d2698cf70f_prof);
+
+    }
+
+    // line 105
+    public function block_messages($context, array $blocks = array())
+    {
+        $__internal_d576f7e1161d770e2a243ef1df29960eb8c84326b6f1558939ed67dd5f1d16e0 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d576f7e1161d770e2a243ef1df29960eb8c84326b6f1558939ed67dd5f1d16e0->enter($__internal_d576f7e1161d770e2a243ef1df29960eb8c84326b6f1558939ed67dd5f1d16e0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "messages"));
+
+        $__internal_03732923eb8cc9d2c91074eceb8a785acb59b9e6a5f831b13f47d201be0940ba = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_03732923eb8cc9d2c91074eceb8a785acb59b9e6a5f831b13f47d201be0940ba->enter($__internal_03732923eb8cc9d2c91074eceb8a785acb59b9e6a5f831b13f47d201be0940ba_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "messages"));
+
+        // line 106
+        echo "
+    ";
+        // line 108
         echo "    ";
         list($context["messages_defined"], $context["messages_missing"], $context["messages_fallback"]) =         array(array(), array(), array());
-        // line 87
+        // line 109
         echo "    ";
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 87, $this->getSourceContext()); })()), "messages", array()));
+        $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 109, $this->getSourceContext()); })()), "messages", array()));
         foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-            // line 88
+            // line 110
             echo "        ";
             if ((twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "state", array()) == twig_constant("Symfony\\Component\\Translation\\DataCollectorTranslator::MESSAGE_DEFINED"))) {
-                // line 89
+                // line 111
                 echo "            ";
-                $context["messages_defined"] = twig_array_merge((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 89, $this->getSourceContext()); })()), array(0 => $context["message"]));
-                // line 90
+                $context["messages_defined"] = twig_array_merge((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 111, $this->getSourceContext()); })()), array(0 => $context["message"]));
+                // line 112
                 echo "        ";
             } elseif ((twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "state", array()) == twig_constant("Symfony\\Component\\Translation\\DataCollectorTranslator::MESSAGE_MISSING"))) {
-                // line 91
+                // line 113
                 echo "            ";
-                $context["messages_missing"] = twig_array_merge((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 91, $this->getSourceContext()); })()), array(0 => $context["message"]));
-                // line 92
+                $context["messages_missing"] = twig_array_merge((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 113, $this->getSourceContext()); })()), array(0 => $context["message"]));
+                // line 114
                 echo "        ";
             } elseif ((twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "state", array()) == twig_constant("Symfony\\Component\\Translation\\DataCollectorTranslator::MESSAGE_EQUALS_FALLBACK"))) {
-                // line 93
+                // line 115
                 echo "            ";
-                $context["messages_fallback"] = twig_array_merge((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 93, $this->getSourceContext()); })()), array(0 => $context["message"]));
-                // line 94
+                $context["messages_fallback"] = twig_array_merge((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 115, $this->getSourceContext()); })()), array(0 => $context["message"]));
+                // line 116
                 echo "        ";
             }
-            // line 95
+            // line 117
             echo "    ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 96
+        // line 118
         echo "
     <div class=\"sf-tabs\">
         <div class=\"tab\">
             <h3 class=\"tab-title\">Defined <span class=\"badge\">";
-        // line 99
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 99, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
+        // line 121
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 121, $this->getSourceContext()); })()), "countDefines", array()), "html", null, true);
         echo "</span></h3>
 
             <div class=\"tab-content\">
@@ -300,30 +358,30 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                 </p>
 
                 ";
-        // line 106
-        if (twig_test_empty((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 106, $this->getSourceContext()); })()))) {
-            // line 107
+        // line 128
+        if (twig_test_empty((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 128, $this->getSourceContext()); })()))) {
+            // line 129
             echo "                    <div class=\"empty\">
                         <p>None of the used translation messages are defined for the given locale.</p>
                     </div>
                 ";
         } else {
-            // line 111
+            // line 133
             echo "                    ";
-            echo $context["helper"]->macro_render_table((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 111, $this->getSourceContext()); })()));
-            echo "
-                ";
+            $this->displayBlock('defined_messages', $context, $blocks);
+            // line 136
+            echo "                ";
         }
-        // line 113
+        // line 137
         echo "            </div>
         </div>
 
         <div class=\"tab\">
             <h3 class=\"tab-title\">Fallback <span class=\"badge ";
-        // line 117
-        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 117, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("status-warning") : (""));
+        // line 141
+        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 141, $this->getSourceContext()); })()), "countFallbacks", array())) ? ("status-warning") : (""));
         echo "\">";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 117, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 141, $this->getSourceContext()); })()), "countFallbacks", array()), "html", null, true);
         echo "</span></h3>
 
             <div class=\"tab-content\">
@@ -333,30 +391,30 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                 </p>
 
                 ";
-        // line 125
-        if (twig_test_empty((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 125, $this->getSourceContext()); })()))) {
-            // line 126
+        // line 149
+        if (twig_test_empty((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 149, $this->getSourceContext()); })()))) {
+            // line 150
             echo "                    <div class=\"empty\">
                         <p>No fallback translation messages were used.</p>
                     </div>
                 ";
         } else {
-            // line 130
+            // line 154
             echo "                    ";
-            echo $context["helper"]->macro_render_table((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 130, $this->getSourceContext()); })()));
-            echo "
-                ";
+            $this->displayBlock('fallback_messages', $context, $blocks);
+            // line 157
+            echo "                ";
         }
-        // line 132
+        // line 158
         echo "            </div>
         </div>
 
         <div class=\"tab\">
             <h3 class=\"tab-title\">Missing <span class=\"badge ";
-        // line 136
-        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 136, $this->getSourceContext()); })()), "countMissings", array())) ? ("status-error") : (""));
+        // line 162
+        echo ((twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 162, $this->getSourceContext()); })()), "countMissings", array())) ? ("status-error") : (""));
         echo "\">";
-        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 136, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
+        echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["collector"]) || array_key_exists("collector", $context) ? $context["collector"] : (function () { throw new Twig_Error_Runtime('Variable "collector" does not exist.', 162, $this->getSourceContext()); })()), "countMissings", array()), "html", null, true);
         echo "</span></h3>
 
             <div class=\"tab-content\">
@@ -367,34 +425,101 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                 </p>
 
                 ";
-        // line 145
-        if (twig_test_empty((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 145, $this->getSourceContext()); })()))) {
-            // line 146
+        // line 171
+        if (twig_test_empty((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 171, $this->getSourceContext()); })()))) {
+            // line 172
             echo "                    <div class=\"empty\">
                         <p>There are no messages of this category.</p>
                     </div>
                 ";
         } else {
-            // line 150
+            // line 176
             echo "                    ";
-            echo $context["helper"]->macro_render_table((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 150, $this->getSourceContext()); })()));
-            echo "
-                ";
+            $this->displayBlock('missing_messages', $context, $blocks);
+            // line 179
+            echo "                ";
         }
-        // line 152
+        // line 180
         echo "            </div>
         </div>
     </div>
-";
+
+    ";
         
-        $__internal_220fb8eca82920472954c5800cf53b3bac0ad0994c107c30d3068e60601fa1c4->leave($__internal_220fb8eca82920472954c5800cf53b3bac0ad0994c107c30d3068e60601fa1c4_prof);
+        $__internal_03732923eb8cc9d2c91074eceb8a785acb59b9e6a5f831b13f47d201be0940ba->leave($__internal_03732923eb8cc9d2c91074eceb8a785acb59b9e6a5f831b13f47d201be0940ba_prof);
 
         
-        $__internal_b92b14554affabde059516b90f2028aae478cfdff799e30737bf2fc58f9579da->leave($__internal_b92b14554affabde059516b90f2028aae478cfdff799e30737bf2fc58f9579da_prof);
+        $__internal_d576f7e1161d770e2a243ef1df29960eb8c84326b6f1558939ed67dd5f1d16e0->leave($__internal_d576f7e1161d770e2a243ef1df29960eb8c84326b6f1558939ed67dd5f1d16e0_prof);
 
     }
 
-    // line 157
+    // line 133
+    public function block_defined_messages($context, array $blocks = array())
+    {
+        $__internal_4a0bc61f9beec3c1edf2d22bd2c51a5b96b93da402305a7b4596c01e2c7535bd = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_4a0bc61f9beec3c1edf2d22bd2c51a5b96b93da402305a7b4596c01e2c7535bd->enter($__internal_4a0bc61f9beec3c1edf2d22bd2c51a5b96b93da402305a7b4596c01e2c7535bd_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "defined_messages"));
+
+        $__internal_07e7c76153d81a94cf4591395d2b4572eeaf08780e0bc7433bec35087d36caeb = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_07e7c76153d81a94cf4591395d2b4572eeaf08780e0bc7433bec35087d36caeb->enter($__internal_07e7c76153d81a94cf4591395d2b4572eeaf08780e0bc7433bec35087d36caeb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "defined_messages"));
+
+        // line 134
+        echo "                        ";
+        echo $context["helper"]->macro_render_table((isset($context["messages_defined"]) || array_key_exists("messages_defined", $context) ? $context["messages_defined"] : (function () { throw new Twig_Error_Runtime('Variable "messages_defined" does not exist.', 134, $this->getSourceContext()); })()));
+        echo "
+                    ";
+        
+        $__internal_07e7c76153d81a94cf4591395d2b4572eeaf08780e0bc7433bec35087d36caeb->leave($__internal_07e7c76153d81a94cf4591395d2b4572eeaf08780e0bc7433bec35087d36caeb_prof);
+
+        
+        $__internal_4a0bc61f9beec3c1edf2d22bd2c51a5b96b93da402305a7b4596c01e2c7535bd->leave($__internal_4a0bc61f9beec3c1edf2d22bd2c51a5b96b93da402305a7b4596c01e2c7535bd_prof);
+
+    }
+
+    // line 154
+    public function block_fallback_messages($context, array $blocks = array())
+    {
+        $__internal_c3ed2456bbbe3e724b82e9bdedf3a08f7b86b3d68ba72935e4ec623c59ea39fc = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_c3ed2456bbbe3e724b82e9bdedf3a08f7b86b3d68ba72935e4ec623c59ea39fc->enter($__internal_c3ed2456bbbe3e724b82e9bdedf3a08f7b86b3d68ba72935e4ec623c59ea39fc_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fallback_messages"));
+
+        $__internal_9adfd2265f2a48e2cd4bb650ac3470b5b9ace908e4463c1e09bfd5499f5b577e = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_9adfd2265f2a48e2cd4bb650ac3470b5b9ace908e4463c1e09bfd5499f5b577e->enter($__internal_9adfd2265f2a48e2cd4bb650ac3470b5b9ace908e4463c1e09bfd5499f5b577e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "fallback_messages"));
+
+        // line 155
+        echo "                        ";
+        echo $context["helper"]->macro_render_table((isset($context["messages_fallback"]) || array_key_exists("messages_fallback", $context) ? $context["messages_fallback"] : (function () { throw new Twig_Error_Runtime('Variable "messages_fallback" does not exist.', 155, $this->getSourceContext()); })()));
+        echo "
+                    ";
+        
+        $__internal_9adfd2265f2a48e2cd4bb650ac3470b5b9ace908e4463c1e09bfd5499f5b577e->leave($__internal_9adfd2265f2a48e2cd4bb650ac3470b5b9ace908e4463c1e09bfd5499f5b577e_prof);
+
+        
+        $__internal_c3ed2456bbbe3e724b82e9bdedf3a08f7b86b3d68ba72935e4ec623c59ea39fc->leave($__internal_c3ed2456bbbe3e724b82e9bdedf3a08f7b86b3d68ba72935e4ec623c59ea39fc_prof);
+
+    }
+
+    // line 176
+    public function block_missing_messages($context, array $blocks = array())
+    {
+        $__internal_d2636af9e87f4040f84354986ba48ad40804cd816d75b5c5f67c1a233886e454 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_d2636af9e87f4040f84354986ba48ad40804cd816d75b5c5f67c1a233886e454->enter($__internal_d2636af9e87f4040f84354986ba48ad40804cd816d75b5c5f67c1a233886e454_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "missing_messages"));
+
+        $__internal_2e4157fc1d3816c6e62fc5c0058ad84ddb41f006de2bec1f53f8124d1beb2972 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_2e4157fc1d3816c6e62fc5c0058ad84ddb41f006de2bec1f53f8124d1beb2972->enter($__internal_2e4157fc1d3816c6e62fc5c0058ad84ddb41f006de2bec1f53f8124d1beb2972_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "missing_messages"));
+
+        // line 177
+        echo "                        ";
+        echo $context["helper"]->macro_render_table((isset($context["messages_missing"]) || array_key_exists("messages_missing", $context) ? $context["messages_missing"] : (function () { throw new Twig_Error_Runtime('Variable "messages_missing" does not exist.', 177, $this->getSourceContext()); })()));
+        echo "
+                    ";
+        
+        $__internal_2e4157fc1d3816c6e62fc5c0058ad84ddb41f006de2bec1f53f8124d1beb2972->leave($__internal_2e4157fc1d3816c6e62fc5c0058ad84ddb41f006de2bec1f53f8124d1beb2972_prof);
+
+        
+        $__internal_d2636af9e87f4040f84354986ba48ad40804cd816d75b5c5f67c1a233886e454->leave($__internal_d2636af9e87f4040f84354986ba48ad40804cd816d75b5c5f67c1a233886e454_prof);
+
+    }
+
+    // line 188
     public function macro_render_table($__messages__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
@@ -406,13 +531,13 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
 
         ob_start();
         try {
-            $__internal_9cd685ca880a7b9ddb1b24a6d13a0c3424d47749775d901daebd817e509b5a2c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-            $__internal_9cd685ca880a7b9ddb1b24a6d13a0c3424d47749775d901daebd817e509b5a2c->enter($__internal_9cd685ca880a7b9ddb1b24a6d13a0c3424d47749775d901daebd817e509b5a2c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "macro", "render_table"));
+            $__internal_e7bf7933ff7d4f00d8d2102d54512829a53ae00279023e01e9f012d3012ca1e4 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+            $__internal_e7bf7933ff7d4f00d8d2102d54512829a53ae00279023e01e9f012d3012ca1e4->enter($__internal_e7bf7933ff7d4f00d8d2102d54512829a53ae00279023e01e9f012d3012ca1e4_prof = new Twig_Profiler_Profile($this->getTemplateName(), "macro", "render_table"));
 
-            $__internal_74366a49e84dcc69820c3dd9f9d472982d32e461bbae4181defd7ca9488bf28c = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-            $__internal_74366a49e84dcc69820c3dd9f9d472982d32e461bbae4181defd7ca9488bf28c->enter($__internal_74366a49e84dcc69820c3dd9f9d472982d32e461bbae4181defd7ca9488bf28c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "macro", "render_table"));
+            $__internal_3ccdb5550f2b87b3f399634daf108983748d05f709b959df31993c551be63b63 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+            $__internal_3ccdb5550f2b87b3f399634daf108983748d05f709b959df31993c551be63b63->enter($__internal_3ccdb5550f2b87b3f399634daf108983748d05f709b959df31993c551be63b63_prof = new Twig_Profiler_Profile($this->getTemplateName(), "macro", "render_table"));
 
-            // line 158
+            // line 189
             echo "    <table>
         <thead>
             <tr>
@@ -425,9 +550,9 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
         </thead>
         <tbody>
         ";
-            // line 169
+            // line 200
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new Twig_Error_Runtime('Variable "messages" does not exist.', 169, $this->getSourceContext()); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["messages"]) || array_key_exists("messages", $context) ? $context["messages"] : (function () { throw new Twig_Error_Runtime('Variable "messages" does not exist.', 200, $this->getSourceContext()); })()));
             $context['loop'] = array(
               'parent' => $context['_parent'],
               'index0' => 0,
@@ -442,53 +567,53 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["message"]) {
-                // line 170
+                // line 201
                 echo "            <tr>
                 <td class=\"font-normal text-small\">";
-                // line 171
+                // line 202
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "locale", array()), "html", null, true);
                 echo "</td>
                 <td class=\"font-normal text-small text-bold nowrap\">";
-                // line 172
+                // line 203
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "domain", array()), "html", null, true);
                 echo "</td>
                 <td class=\"font-normal text-small\">";
-                // line 173
+                // line 204
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "count", array()), "html", null, true);
                 echo "</td>
                 <td>
                     <span class=\"nowrap\">";
-                // line 175
+                // line 206
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "id", array()), "html", null, true);
                 echo "</span>
 
                     ";
-                // line 177
+                // line 208
                 if ( !(null === twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "transChoiceNumber", array()))) {
-                    // line 178
+                    // line 209
                     echo "                        <small class=\"newline\">(pluralization is used)</small>
                     ";
                 }
-                // line 180
+                // line 211
                 echo "
                     ";
-                // line 181
+                // line 212
                 if ((twig_length_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "parameters", array())) > 0)) {
-                    // line 182
+                    // line 213
                     echo "                        <button class=\"btn-link newline text-small sf-toggle\" data-toggle-selector=\"#parameters-";
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["loop"], "index", array()), "html", null, true);
                     echo "\" data-toggle-alt-content=\"Hide parameters\">Show parameters</button>
 
                         <div id=\"parameters-";
-                    // line 184
+                    // line 215
                     echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["loop"], "index", array()), "html", null, true);
                     echo "\" class=\"hidden\">
                             ";
-                    // line 185
+                    // line 216
                     $context['_parent'] = $context;
                     $context['_seq'] = twig_ensure_traversable(twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "parameters", array()));
                     foreach ($context['_seq'] as $context["_key"] => $context["parameters"]) {
-                        // line 186
+                        // line 217
                         echo "                                ";
                         echo call_user_func_array($this->env->getFunction('profiler_dump')->getCallable(), array($this->env, $context["parameters"], 1));
                         echo "
@@ -497,14 +622,14 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                     $_parent = $context['_parent'];
                     unset($context['_seq'], $context['_iterated'], $context['_key'], $context['parameters'], $context['_parent'], $context['loop']);
                     $context = array_intersect_key($context, $_parent) + $_parent;
-                    // line 188
+                    // line 219
                     echo "                        </div>
                     ";
                 }
-                // line 190
+                // line 221
                 echo "                </td>
                 <td class=\"prewrap\">";
-                // line 191
+                // line 222
                 echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->getSourceContext(), $context["message"], "translation", array()), "html", null, true);
                 echo "</td>
             </tr>
@@ -521,15 +646,15 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['message'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 194
+            // line 225
             echo "        </tbody>
     </table>
 ";
             
-            $__internal_74366a49e84dcc69820c3dd9f9d472982d32e461bbae4181defd7ca9488bf28c->leave($__internal_74366a49e84dcc69820c3dd9f9d472982d32e461bbae4181defd7ca9488bf28c_prof);
+            $__internal_3ccdb5550f2b87b3f399634daf108983748d05f709b959df31993c551be63b63->leave($__internal_3ccdb5550f2b87b3f399634daf108983748d05f709b959df31993c551be63b63_prof);
 
             
-            $__internal_9cd685ca880a7b9ddb1b24a6d13a0c3424d47749775d901daebd817e509b5a2c->leave($__internal_9cd685ca880a7b9ddb1b24a6d13a0c3424d47749775d901daebd817e509b5a2c_prof);
+            $__internal_e7bf7933ff7d4f00d8d2102d54512829a53ae00279023e01e9f012d3012ca1e4->leave($__internal_e7bf7933ff7d4f00d8d2102d54512829a53ae00279023e01e9f012d3012ca1e4_prof);
 
 
             return ('' === $tmp = ob_get_contents()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
@@ -550,7 +675,7 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
 
     public function getDebugInfo()
     {
-        return array (  525 => 194,  508 => 191,  505 => 190,  501 => 188,  492 => 186,  488 => 185,  484 => 184,  478 => 182,  476 => 181,  473 => 180,  469 => 178,  467 => 177,  462 => 175,  457 => 173,  453 => 172,  449 => 171,  446 => 170,  429 => 169,  416 => 158,  398 => 157,  385 => 152,  379 => 150,  373 => 146,  371 => 145,  357 => 136,  351 => 132,  345 => 130,  339 => 126,  337 => 125,  324 => 117,  318 => 113,  312 => 111,  306 => 107,  304 => 106,  294 => 99,  289 => 96,  283 => 95,  280 => 94,  277 => 93,  274 => 92,  271 => 91,  268 => 90,  265 => 89,  262 => 88,  257 => 87,  254 => 86,  244 => 78,  236 => 73,  228 => 68,  222 => 64,  213 => 63,  199 => 59,  192 => 54,  189 => 53,  180 => 52,  169 => 49,  163 => 46,  160 => 45,  157 => 44,  155 => 43,  150 => 41,  143 => 40,  134 => 39,  121 => 35,  118 => 34,  112 => 31,  103 => 25,  99 => 24,  90 => 18,  86 => 17,  82 => 15,  80 => 14,  77 => 13,  71 => 11,  68 => 10,  66 => 9,  61 => 8,  58 => 7,  55 => 6,  46 => 5,  36 => 1,  34 => 3,  11 => 1,);
+        return array (  650 => 225,  633 => 222,  630 => 221,  626 => 219,  617 => 217,  613 => 216,  609 => 215,  603 => 213,  601 => 212,  598 => 211,  594 => 209,  592 => 208,  587 => 206,  582 => 204,  578 => 203,  574 => 202,  571 => 201,  554 => 200,  541 => 189,  523 => 188,  510 => 177,  501 => 176,  488 => 155,  479 => 154,  466 => 134,  457 => 133,  443 => 180,  440 => 179,  437 => 176,  431 => 172,  429 => 171,  415 => 162,  409 => 158,  406 => 157,  403 => 154,  397 => 150,  395 => 149,  382 => 141,  376 => 137,  373 => 136,  370 => 133,  364 => 129,  362 => 128,  352 => 121,  347 => 118,  341 => 117,  338 => 116,  335 => 115,  332 => 114,  329 => 113,  326 => 112,  323 => 111,  320 => 110,  315 => 109,  312 => 108,  309 => 106,  300 => 105,  289 => 185,  287 => 105,  277 => 98,  269 => 93,  261 => 88,  249 => 79,  242 => 75,  235 => 70,  226 => 69,  212 => 65,  205 => 60,  202 => 59,  193 => 58,  182 => 55,  176 => 52,  173 => 51,  170 => 50,  168 => 49,  163 => 47,  156 => 46,  147 => 45,  134 => 41,  131 => 40,  125 => 37,  116 => 31,  112 => 30,  103 => 24,  99 => 23,  91 => 18,  86 => 15,  84 => 14,  81 => 13,  75 => 11,  72 => 10,  70 => 9,  65 => 8,  62 => 7,  59 => 6,  50 => 5,  40 => 1,  38 => 3,  11 => 1,);
     }
 
     public function getSourceContext()
@@ -569,6 +694,12 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
         {% endset %}
 
         {% set text %}
+            <div class=\"sf-toolbar-info-piece\">
+                <b>Locale</b>
+                <span class=\"sf-toolbar-status\">
+                    {{ collector.locale|default('-') }}
+                </span>
+            </div>
             <div class=\"sf-toolbar-info-piece\">
                 <b>Missing messages</b>
                 <span class=\"sf-toolbar-status sf-toolbar-status-{{ collector.countMissings ? 'red' }}\">
@@ -618,6 +749,20 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
 {% endblock %}
 
 {% block panelContent %}
+
+    <h2>Translation Locales</h2>
+
+    <div class=\"metrics\">
+        <div class=\"metric\">
+            <span class=\"value\">{{ collector.locale|default('-') }}</span>
+            <span class=\"label\">Locale</span>
+        </div>
+        <div class=\"metric\">
+            <span class=\"value\">{{ collector.fallbackLocales|join(', ')|default('-') }}</span>
+            <span class=\"label\">Fallback locales</span>
+        </div>
+    </div>
+
     <h2>Translation Metrics</h2>
 
     <div class=\"metrics\">
@@ -638,6 +783,8 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
     </div>
 
     <h2>Translation Messages</h2>
+
+    {% block messages %}
 
     {# sort translation messages in groups #}
     {% set messages_defined, messages_missing, messages_fallback = [], [], [] %}
@@ -665,7 +812,9 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                         <p>None of the used translation messages are defined for the given locale.</p>
                     </div>
                 {% else %}
-                    {{ helper.render_table(messages_defined) }}
+                    {% block defined_messages %}
+                        {{ helper.render_table(messages_defined) }}
+                    {% endblock %}
                 {% endif %}
             </div>
         </div>
@@ -684,7 +833,9 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                         <p>No fallback translation messages were used.</p>
                     </div>
                 {% else %}
-                    {{ helper.render_table(messages_fallback) }}
+                    {% block fallback_messages %}
+                        {{ helper.render_table(messages_fallback) }}
+                    {% endblock %}
                 {% endif %}
             </div>
         </div>
@@ -704,11 +855,16 @@ class __TwigTemplate_926df69c732b373ad003e2323473ffc7296e09fb2b764b5cb1a5d14bc1b
                         <p>There are no messages of this category.</p>
                     </div>
                 {% else %}
-                    {{ helper.render_table(messages_missing) }}
+                    {% block missing_messages %}
+                        {{ helper.render_table(messages_missing) }}
+                    {% endblock %}
                 {% endif %}
             </div>
         </div>
     </div>
+
+    {% endblock messages %}
+
 {% endblock %}
 
 {% macro render_table(messages) %}

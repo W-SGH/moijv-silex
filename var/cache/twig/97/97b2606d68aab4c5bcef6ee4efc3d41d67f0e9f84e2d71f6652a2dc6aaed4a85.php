@@ -15,11 +15,11 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_9b04718b3b1f2937fd9ecacac66f4eff3bfe35ca95c8084956b61169a4b5d35c = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
-        $__internal_9b04718b3b1f2937fd9ecacac66f4eff3bfe35ca95c8084956b61169a4b5d35c->enter($__internal_9b04718b3b1f2937fd9ecacac66f4eff3bfe35ca95c8084956b61169a4b5d35c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
+        $__internal_ca896ef2b736563496d9c65b9992d79c3201e646208c85c92b09bf6e9b902f50 = $this->env->getExtension("Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension");
+        $__internal_ca896ef2b736563496d9c65b9992d79c3201e646208c85c92b09bf6e9b902f50->enter($__internal_ca896ef2b736563496d9c65b9992d79c3201e646208c85c92b09bf6e9b902f50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
 
-        $__internal_0218e99594c6b79190fda9235aeb42e9121b708b318877d2db20b37acc597b8b = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
-        $__internal_0218e99594c6b79190fda9235aeb42e9121b708b318877d2db20b37acc597b8b->enter($__internal_0218e99594c6b79190fda9235aeb42e9121b708b318877d2db20b37acc597b8b_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
+        $__internal_fbd9d40feb439d798e3d08ac2b507da7fbf2c037a954a6b5e7f584c55cc938b2 = $this->env->getExtension("Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension");
+        $__internal_fbd9d40feb439d798e3d08ac2b507da7fbf2c037a954a6b5e7f584c55cc938b2->enter($__internal_fbd9d40feb439d798e3d08ac2b507da7fbf2c037a954a6b5e7f584c55cc938b2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@WebProfiler/Profiler/toolbar.css.twig"));
 
         // line 2
         $context["colors"] = array("success" => "#4F805D", "warning" => "#A46A1F", "error" => "#B0413E");
@@ -64,6 +64,7 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     vertical-align: baseline;
+    letter-spacing: normal;
 }
 
 .sf-toolbarreset {
@@ -230,41 +231,41 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
 
 .sf-toolbar-block .sf-toolbar-status-green {
     background-color: ";
-        // line 208
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 208, $this->getSourceContext()); })()), "success", array());
+        // line 209
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 209, $this->getSourceContext()); })()), "success", array());
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-red {
     background-color: ";
-        // line 211
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 211, $this->getSourceContext()); })()), "error", array());
+        // line 212
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 212, $this->getSourceContext()); })()), "error", array());
         echo ";
 }
 .sf-toolbar-block .sf-toolbar-status-yellow {
     background-color: ";
-        // line 214
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 214, $this->getSourceContext()); })()), "warning", array());
+        // line 215
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 215, $this->getSourceContext()); })()), "warning", array());
         echo ";
 }
 
 .sf-toolbar-block.sf-toolbar-status-green {
     background-color: ";
-        // line 218
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 218, $this->getSourceContext()); })()), "success", array());
+        // line 219
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 219, $this->getSourceContext()); })()), "success", array());
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-red {
     background-color: ";
-        // line 222
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 222, $this->getSourceContext()); })()), "error", array());
+        // line 223
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 223, $this->getSourceContext()); })()), "error", array());
         echo ";
     color: #FFF;
 }
 .sf-toolbar-block.sf-toolbar-status-yellow {
     background-color: ";
-        // line 226
-        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 226, $this->getSourceContext()); })()), "warning", array());
+        // line 227
+        echo twig_get_attribute($this->env, $this->getSourceContext(), (isset($context["colors"]) || array_key_exists("colors", $context) ? $context["colors"] : (function () { throw new Twig_Error_Runtime('Variable "colors" does not exist.', 227, $this->getSourceContext()); })()), "warning", array());
         echo ";
     color: #FFF;
 }
@@ -293,6 +294,10 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     height: 17px;
     line-height: 17px;
     margin-right: 5px;
+}
+
+.sf-toolbar-block-ajax .sf-toolbar-icon {
+    cursor: pointer;
 }
 
 .sf-toolbar-status-green .sf-toolbar-label,
@@ -338,15 +343,21 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     margin-left: 4px;
 }
 
-.sf-toolbar-block:hover {
+.sf-toolbar-block:hover,
+.sf-toolbar-block.hover {
     position: relative;
 }
-.sf-toolbar-block:hover .sf-toolbar-icon {
+.sf-toolbar-block:hover .sf-toolbar-icon,
+.sf-toolbar-block.hover .sf-toolbar-icon {
     background-color: #444;
     position: relative;
     z-index: 10002;
 }
-.sf-toolbar-block:hover .sf-toolbar-info {
+.sf-toolbar-block-ajax.hover .sf-toolbar-info {
+    z-index: 10001;
+}
+.sf-toolbar-block:hover .sf-toolbar-info,
+.sf-toolbar-block.hover .sf-toolbar-info {
     display: block;
     padding: 10px;
     max-width: 480px;
@@ -453,9 +464,9 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
 
 /* Override the setting when the toolbar is on the top */
 ";
-        // line 413
-        if (((isset($context["position"]) || array_key_exists("position", $context) ? $context["position"] : (function () { throw new Twig_Error_Runtime('Variable "position" does not exist.', 413, $this->getSourceContext()); })()) == "top")) {
-            // line 414
+        // line 424
+        if (((isset($context["position"]) || array_key_exists("position", $context) ? $context["position"] : (function () { throw new Twig_Error_Runtime('Variable "position" does not exist.', 424, $this->getSourceContext()); })()) == "top")) {
+            // line 425
             echo "    .sf-minitoolbar {
         border-bottom-left-radius: 4px;
         border-top-left-radius: 0;
@@ -476,18 +487,18 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     }
 ";
         }
-        // line 433
+        // line 444
         echo "
 ";
-        // line 434
-        if ( !(isset($context["floatable"]) || array_key_exists("floatable", $context) ? $context["floatable"] : (function () { throw new Twig_Error_Runtime('Variable "floatable" does not exist.', 434, $this->getSourceContext()); })())) {
-            // line 435
+        // line 445
+        if ( !(isset($context["floatable"]) || array_key_exists("floatable", $context) ? $context["floatable"] : (function () { throw new Twig_Error_Runtime('Variable "floatable" does not exist.', 445, $this->getSourceContext()); })())) {
+            // line 446
             echo "    .sf-toolbarreset {
         position: static;
     }
 ";
         }
-        // line 439
+        // line 450
         echo "
 /* Responsive Design */
 .sf-toolbar-icon .sf-toolbar-label,
@@ -624,10 +635,10 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
 }
 ";
         
-        $__internal_9b04718b3b1f2937fd9ecacac66f4eff3bfe35ca95c8084956b61169a4b5d35c->leave($__internal_9b04718b3b1f2937fd9ecacac66f4eff3bfe35ca95c8084956b61169a4b5d35c_prof);
+        $__internal_ca896ef2b736563496d9c65b9992d79c3201e646208c85c92b09bf6e9b902f50->leave($__internal_ca896ef2b736563496d9c65b9992d79c3201e646208c85c92b09bf6e9b902f50_prof);
 
         
-        $__internal_0218e99594c6b79190fda9235aeb42e9121b708b318877d2db20b37acc597b8b->leave($__internal_0218e99594c6b79190fda9235aeb42e9121b708b318877d2db20b37acc597b8b_prof);
+        $__internal_fbd9d40feb439d798e3d08ac2b507da7fbf2c037a954a6b5e7f584c55cc938b2->leave($__internal_fbd9d40feb439d798e3d08ac2b507da7fbf2c037a954a6b5e7f584c55cc938b2_prof);
 
     }
 
@@ -643,7 +654,7 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
 
     public function getDebugInfo()
     {
-        return array (  491 => 439,  485 => 435,  483 => 434,  480 => 433,  459 => 414,  457 => 413,  267 => 226,  260 => 222,  253 => 218,  246 => 214,  240 => 211,  234 => 208,  27 => 3,  25 => 2,);
+        return array (  502 => 450,  496 => 446,  494 => 445,  491 => 444,  470 => 425,  468 => 424,  268 => 227,  261 => 223,  254 => 219,  247 => 215,  241 => 212,  235 => 209,  27 => 3,  25 => 2,);
     }
 
     public function getSourceContext()
@@ -690,6 +701,7 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     vertical-align: baseline;
+    letter-spacing: normal;
 }
 
 .sf-toolbarreset {
@@ -903,6 +915,10 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     margin-right: 5px;
 }
 
+.sf-toolbar-block-ajax .sf-toolbar-icon {
+    cursor: pointer;
+}
+
 .sf-toolbar-status-green .sf-toolbar-label,
 .sf-toolbar-status-yellow .sf-toolbar-label,
 .sf-toolbar-status-red .sf-toolbar-label {
@@ -946,15 +962,21 @@ class __TwigTemplate_b2d91ff93c921b0a85800443a4554b29e6898d10f93bfeedb425f529cba
     margin-left: 4px;
 }
 
-.sf-toolbar-block:hover {
+.sf-toolbar-block:hover,
+.sf-toolbar-block.hover {
     position: relative;
 }
-.sf-toolbar-block:hover .sf-toolbar-icon {
+.sf-toolbar-block:hover .sf-toolbar-icon,
+.sf-toolbar-block.hover .sf-toolbar-icon {
     background-color: #444;
     position: relative;
     z-index: 10002;
 }
-.sf-toolbar-block:hover .sf-toolbar-info {
+.sf-toolbar-block-ajax.hover .sf-toolbar-info {
+    z-index: 10001;
+}
+.sf-toolbar-block:hover .sf-toolbar-info,
+.sf-toolbar-block.hover .sf-toolbar-info {
     display: block;
     padding: 10px;
     max-width: 480px;
