@@ -39,7 +39,7 @@ class UserType extends AbstractType
                 new Assert\NotBlank(),
                 new Assert\Length(['min' => 2, 'max' => 50]),
                 new \Constraints\UniqueEntity([
-                    'field' => 'username',
+                    'field' => 'email',
                     'dao' => $app['users.dao']
                 ])
             ],

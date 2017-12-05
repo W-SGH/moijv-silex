@@ -10,7 +10,7 @@ use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
 /**
  * Description of UserDAO
  *
- * @author eric
+ * @author Etudiant
  */
 class UserDAO extends \SimpleDAO\DAO implements UserProviderInterface
 {
@@ -21,10 +21,10 @@ class UserDAO extends \SimpleDAO\DAO implements UserProviderInterface
         //select * from user where username = ? LIMIT 1 (et le résultat est converti en entité)
         // bindvalue(1, $username)
         $user = $this->findOne(array('username = ?' => $username)); //findOne est une méthode fournie par simpledao
-            if (! $user) {
-                throw new UsernameNotFoundException("User with username $username does not exist");
-            }
-            return $user;
+        if (!$user) {
+            throw new UsernameNotFoundException("User with username $username does not exist");
+        }
+        return $user;
     }
 
     public function refreshUser(UserInterface $user)

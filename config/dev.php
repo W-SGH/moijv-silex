@@ -9,6 +9,8 @@ require __DIR__.'/prod.php';
 // enable the debug mode
 $app['debug'] = true;
 
+$app['twig.options'] = array('cache' => __DIR__.'/../var/cache/twig');
+
 $app->register(new MonologServiceProvider(), array(
     'monolog.logfile' => __DIR__.'/../var/logs/silex_dev.log',
 ));
